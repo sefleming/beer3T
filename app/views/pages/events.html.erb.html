@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <title>Rent Stone's Throw for Events</title>
+	  <%= javascript_include_tag :defaults %>
+	  <%= yield :head %>
+  </head>
+  <body>
+  <nav>
+  	<div class="grid-container">
+    	<div class="grid-20 nav-logo">
+			<%= image_tag("logo-small.png") %>
+		</div><!--close id="nav-logo"-->
+    	
+		<div class="grid-80">
+    			<ul>
+    				<li><%= link_to "Home", pages_home_path %></li>
+    				<li><%= link_to "About", pages_about_path %></li>
+    				<li><%= link_to "Beers", controller: "menu" %></li>
+    				<li><%= link_to "Food", pages_food_path %></li>
+    				<li><%= link_to "Events", pages_events_path %></li>
+    				<li><%= link_to "Distribution", pages_distribution_path %></li>
+    				<li><%= link_to "Contact", pages_contact_path %></li>
+					<li><a class="social-media" href="https://www.facebook.com/StonesThrowBrewing?fref=ts" target="blank"><%= image_tag("icon-facebook-small.gif") %></a></li>
+					<li><a class="social-media" href="https://twitter.com/StonesThrowBrew" target="blank"><%= image_tag("icon-twitter-small.gif") %></a></li>
+					<li><a class="social-media" href="https://www.kickstarter.com/projects/297304074/stones-throw-brewing-tasting-room/posts?page=3" target="blank"><%= image_tag("icon-kick-small.gif") %></a></li>
+    			</ul>
+    	</div>
+  	</div><!--close div class="grid-container"-->  		
+  </nav>
+  
+	<div class="header">
+	<div class="grid-container">
+    	<div class="grid-100">
+    		<p>We’re here all weekend, so join the rest of the neighborhood at our next event.</p>
+    	</div>    	
+  	</div><!--close div class="grid-container"-->  	
+  </div><!--close class="header"-->
+	
+	
+	<div class="rule">
+	</div><!--close class="rule"-->
+		
+	
+    <section class="callout">
+		<div class="grid-container">
+			<div class="grid-60 prefix-20 suffix-20">     		
+				<p>Weekly Events</p>  
+			</div><!--close grid-60"-->
+		</div><!--close grid container-->				
+    </section>
+    
+	
+	<div class="rule">
+	</div><!--close class="rule"-->
+    
+    
+	<section class="main-text">
+		<div class="grid-container">
+			<div class="grid-30">
+				<h2>Thursdays</h2>
+			</div>    		
+			<div class="grid-50 prefix-10 suffix-10">
+				<h4>6:30 pm: Department of Arkansas Heritage #ArkiePubTrivia</h4>
+				<p></p>
+			</div>
+			
+			<div class="grid-30">
+				<h2>Fridays</h2>
+			</div>    		
+			<div class="grid-50 prefix-10 suffix-10">
+				<h4>4:00 pm: First pour of our latest brew</h4>
+				<p></p>
+			</div>
+			
+			<div class="grid-30">
+				<h2>Saturdays</h2>
+			</div>    		
+			<div class="grid-50 prefix-10 suffix-10">
+				<h4>4:00 pm: Weekly Randall offering of freshly infused beer</h4>
+				<p>Schedule subject to change</p>
+			</div>
+		</div><!--close div class="grid-container"-->  	
+    </section><!--close id="history"-->
+	
+	
+	<div class="rule">
+	</div><!--close class="rule"-->
+	
+	
+    <section class="callout">
+		<div class="grid-container">
+			<div class="grid-60 prefix-20 suffix-20">    		
+				<p>Rent Stone's Throw Brewing for your event! Contact us for details.</p>
+			</div><!--close grid-60"-->
+		</div><!--close grid container-->				
+    </section>
+	
+	
+	<div class="rule">
+	</div><!--close class="rule"-->
+	
+	
+	<section class="more-info">
+		<div class="grid-container">
+			<div class="grid-50">
+				<%= image_tag("old-site.jpg") %>
+			</div>
+				
+			<div class="grid-35 prefix-10 suffix-5">
+				<p>Stone’s Throw is an ideal setting for private parties and events, no matter the occasion. Celebrate a family accomplishment, host your next corporate presentation or simply enjoy good food and beer with friends.</p>
+				<p>Stone’s Throw provides a comfortable and unique backdrop for both small and large events. For more information about hosting your special event at Stone’s Throw Brewing, contact us.</p>
+				<div class=" gird-100 info-button">
+      				<%= link_to "Contact Us > > >", pages_contact_path %>
+      			</div><!--close- class="read-button"-->
+			</div>  
+		</div>
+	</section>		
+    
+	
+    <footer>
+    	<div class="grid-container">
+    		<div class="grid-100 mobile-grid-100">
+    			<div class="grid-33 mobile-grid-33 media">
+					<a href="https://www.facebook.com/StonesThrowBrewing?fref=ts" target="blank"><%= image_tag("icon-facebook.gif") %></a>
+    			</div><!--close grid 33-->
+    	
+    			<div class="grid-33 mobile-grid-33 media">
+      				<a href="https://twitter.com/StonesThrowBrew" target="blank"><%= image_tag("icon-twitter.gif") %></a>
+    			</div><!--close grid 33-->
+    	
+    			<div class="grid-33 mobile-grid-33 media">
+      				<a href="https://www.kickstarter.com/projects/297304074/stones-throw-brewing-tasting-room/posts?page=3" target="blank"><%= image_tag("icon-kick.gif") %></a>
+    			</div><!--close grid 33-->
+    			
+    			<p>Stone’s Throw Brewing All Rights Reserved &copy; 2014</p>
+				<p>Updated March 2014</p>
+    		</div><!-- closediv class="grid-100 mobile-grid-100"-->
+  		</div><!--close div class="grid-container"-->
+    </footer>
+    
+  
+  <script src="./assets/javascripts/jquery.js"></script>
+</body>
+</html>

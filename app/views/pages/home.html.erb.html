@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <title>Stones Throw Brewing</title>
+	  <%= javascript_include_tag :defaults %>
+	  <%= yield :head %>
+  </head>
+  <body>
+  	<div id="splash">
+  		<div class="grid-container">
+    		<div class="grid-100 mobile-grid-100">
+    			<h1>Blood, Sweat, &amp; Beers</h1>
+				
+    			<div class="grid-65">
+					<p>We’re taproom trailblazers and pitcher pioneers who believe in beer worth drinking.</p>
+    			</div>
+    		
+    			<div class="grid-35">
+					<%= image_tag("logo-large.png") %>
+    			</div>
+    		</div><!-- closediv class="grid-100 mobile-grid-100"-->
+  		</div><!--close div class="grid-container"-->
+	</div><!--close id="splash"-->
+  
+  
+  <nav>
+  	<div class="grid-container">
+    	<div class="grid-20 nav-logo">
+			<%= image_tag("logo-small.png") %>
+		</div><!--close id="nav-logo"-->
+    	
+		<div class="grid-80">
+    			<ul>
+    				<li><%= link_to "Home", pages_home_path %></li>
+    				<li><%= link_to "About", pages_about_path %></li>
+    				<li><%= link_to "Beers", controller: "menu" %></li>
+    				<li><%= link_to "Food", pages_food_path %></li>
+    				<li><%= link_to "Events", pages_events_path %></li>
+    				<li><%= link_to "Distribution", pages_distribution_path %></li>
+    				<li><%= link_to "Contact", pages_contact_path %></li>
+					<li><a class="social-media" href="https://www.facebook.com/StonesThrowBrewing?fref=ts" target="blank"><%= image_tag("icon-facebook-small.gif") %></a></li>
+					<li><a class="social-media" href="https://twitter.com/StonesThrowBrew" target="blank"><%= image_tag("icon-twitter-small.gif") %></a></li>
+					<li><a class="social-media" href="https://www.kickstarter.com/projects/297304074/stones-throw-brewing-tasting-room/posts?page=3" target="blank"><%= image_tag("icon-kick-small.gif") %></a></li>
+    			</ul>
+    	</div>
+  	</div><!--close div class="grid-container"-->  		
+  </nav>
+  
+  
+    <section class="callout">
+		<div class="grid-container">
+			<div class="grid-60 prefix-20 suffix-20">    		
+				<p>Visit our tap room and try our beers Thursdays through Sundays. You'll receive a dollar off pints for the 1st hour we're open!</p> 
+			</div><!--close grid-60"-->
+		</div><!--close grid container-->
+    </section><!--close id="callout"-->	
+    
+	
+	<div class="rule">
+	</div><!--close class="rule"-->
+    
+	
+<!--section of large icons-->
+    <div class="grid-container" id="icons">
+    	<div class="grid-25">
+      		<%= image_tag("icon-beer.gif") %>
+    	</div><!--close grid 33-->
+    	
+    	<div class="grid-25">
+      		<a href="food.html"><%= image_tag("icon-food.gif") %></a>
+    	</div><!--close grid 33-->
+    	
+    	<div class="grid-25">
+      		<a href="events.html"><%= image_tag("icon-date.gif") %></a>
+    	</div><!--close grid 33-->
+    	
+    	<div class="grid-25">
+      		<a href="distribution.html"><%= image_tag("icon-truck.gif") %></a>
+    	</div><!--close grid 33-->
+    </div><!--close grid-container and icons-->
+    
+	
+    <div class="rule">
+	</div><!--close class="rule"-->
+	
+	
+<!--area for changing content-->
+	<div class="grid-container">
+    	<div class="grid-33">
+      		<section class="article">
+			<div class="grid-container">
+      			<%= image_tag("mug-1.jpg") %>
+      			<h1>Title 1</h1>
+      			<p>Mauris nec libero sit amet nisi dapibus tincidunt. Cras ornare diam sem, eget semper risus aliquet tincidunt. Nulla accumsan adipiscing leo id blandit. Curabitur blandit neque sed tellus accumsan blandit. Integer eget pellentesque elit, eget consequat lacus. Curabitur tristique, odio sed sagittis venenatis, ipsum turpis faucibus magna, non pretium libero purus vel turpis. Donec arcu ante, sagittis sit amet commodo eu, fringilla et neque. Aenean accumsan, dolor ac dictum pulvinar, dolor diam placerat sem, eu aliquet nisl orci ut leo. Nulla nisi sapien, imperdiet eget risus quis, auctor elementum elit. Pellentesque at augue a ante accumsan accumsan. Vivamus sit amet enim turpis. Integer a molestie orci. </p>
+      			<div class="grid-80 prefix-10 suffix-10 read-button">
+      				<a href="article1.html"><p>Read More &rsaquo; &rsaquo; &rsaquo;</p></a>
+      			</div><!--close- class="read-button"-->
+			
+			</div>
+      		</section><!--close class="article"-->
+    	</div><!--close grid 33-->
+    	
+		<div class="grid-33">
+    		<section class="article">
+      			<%= image_tag("mug-2.jpg") %>
+      			<h1>Title 2</h1>
+      			<p>Mauris nec libero sit amet nisi dapibus tincidunt. Cras nec est bibendum nibh laoreet lacinia. Cras ornare diam sem, eget semper risus aliquet tincidunt. Nulla accumsan adipiscing leo id blandit. Curabitur blandit neque sed tellus accumsan blandit. Integer eget pellentesque elit, eget consequat lacus. Curabitur tristique, odio sed sagittis venenatis, ipsum turpis faucibus magna, non pretium libero purus vel turpis. Donec arcu ante, sagittis sit amet commodo eu, fringilla et neque. Aenean accumsan, dolor ac dictum pulvinar, dolor diam placerat sem, eu aliquet nisl orci ut leo. Nulla nisi sapien, imperdiet eget risus quis, auctor elementum elit. Pellentesque at augue a ante accumsan accumsan. Vivamus sit amet enim turpis. Integer a molestie orci. </p>
+      			<div class="grid-80 prefix-10 suffix-10 read-button">
+      				<a href="article2.html"><p>Read More &rsaquo; &rsaquo; &rsaquo;</p></a>
+      			</div><!--close- class="read-button"-->
+      		</section><!--close class="article"-->
+    	</div><!--close grid 33-->
+    	
+		<div class="grid-33">
+    		<section class="article">
+      			<%= image_tag("mug-3.jpg") %>
+      			<h1>Title 3</h1>
+      			<p>Mauris nec libero sit amet nisi dapibus tincidunt. Cras nec est bibendum nibh laoreet lacinia. Cras ornare diam sem, eget semper risus aliquet tincidunt. Nulla accumsan adipiscing leo id blandit. Curabitur blandit neque sed tellus accumsan blandit. Integer eget pellentesque elit, eget consequat lacus. Curabitur tristique, odio sed sagittis venenatis, ipsum turpis faucibus magna, non pretium libero purus vel turpis. Donec arcu ante, sagittis sit amet commodo eu, fringilla et neque. Aenean accumsan, dolor ac dictum pulvinar, dolor diam placerat sem, eu aliquet nisl orci ut leo. Nulla nisi sapien, imperdiet eget risus quis, auctor elementum elit. Pellentesque at augue a ante accumsan accumsan. Vivamus sit amet enim turpis. Integer a molestie orci. </p>
+      			<div class="grid-80 prefix-10 suffix-10 read-button">
+      				<a href="article3.html"><p>Read More &rsaquo; &rsaquo; &rsaquo;</p></a>
+      			</div><!--close- class="read-button"-->
+      		</section><!--close class="article"-->
+    	</div><!--close grid 33-->
+    </div><!--close grid-container and icons-->
+    
+    
+    <footer>
+    	<div class="grid-container">
+    		<div class="grid-100">
+    			<div class="grid-33 mobile-grid-33 media">
+					<a href="https://www.facebook.com/StonesThrowBrewing?fref=ts" target="blank"><%= image_tag("icon-facebook.gif") %></a>
+    			</div><!--close grid 33-->
+    	
+    			<div class="grid-33 mobile-grid-33 media">
+      				<a href="https://twitter.com/StonesThrowBrew" target="blank"><%= image_tag("icon-twitter.gif") %></a>
+    			</div><!--close grid 33-->
+    	
+    			<div class="grid-33 mobile-grid-33 media">
+      				<a href="https://www.kickstarter.com/projects/297304074/stones-throw-brewing-tasting-room/posts?page=3" target="blank"><%= image_tag("icon-kick.gif") %></a>
+    			</div><!--close grid 33-->
+    			
+    			<p>Stone’s Throw Brewing All Rights Reserved &copy; 2014</p>
+				<p>Updated March 2014</p>
+    		</div><!-- closediv class="grid-100 mobile-grid-100"-->
+  		</div><!--close div class="grid-container"-->
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <title>Eat at Stone's Throw</title>
+	  <%= javascript_include_tag :defaults %>
+	  <%= yield :head %>
+  </head>
+  <body>
+  <nav>
+  	<div class="grid-container">
+    	<div class="grid-20 nav-logo">
+			<%= image_tag("logo-small.png") %>
+		</div><!--close id="nav-logo"-->
+    	
+		<div class="grid-80">
+    			<ul>
+    				<li><%= link_to "Home", pages_home_path %></li>
+    				<li><%= link_to "About", pages_about_path %></li>
+    				<li><%= link_to "Beers", controller: "menu" %></li>
+    				<li><%= link_to "Food", pages_food_path %></li>
+    				<li><%= link_to "Events", pages_events_path %></li>
+    				<li><%= link_to "Distribution", pages_distribution_path %></li>
+    				<li><%= link_to "Contact", pages_contact_path %></li>
+					<li><a class="social-media" href="https://www.facebook.com/StonesThrowBrewing?fref=ts" target="blank"><%= image_tag("icon-facebook-small.gif") %></a></li>
+					<li><a class="social-media" href="https://twitter.com/StonesThrowBrew" target="blank"><%= image_tag("icon-twitter-small.gif") %></a></li>
+					<li><a class="social-media" href="https://www.kickstarter.com/projects/297304074/stones-throw-brewing-tasting-room/posts?page=3" target="blank"><%= image_tag("icon-kick-small.gif") %></a></li>
+    			</ul>
+    	</div>
+  	</div><!--close div class="grid-container"-->  		
+  </nav>
+  
+  
+  <div class="header">
+	<div class="grid-container">
+    	<div class="grid-100">
+    		<p>We make and serve beer that pairs well with great food and good company.</p>
+    	</div>    	
+  	</div><!--close div class="grid-container"-->  	
+  </div><!--close class="header"-->
+	
+	
+	<div class="rule">
+	</div><!--close class="rule"-->
+		
+	
+    <section class="callout">
+		<div class="grid-container">
+			<div class="grid-60 prefix-20 suffix-20">      		
+				<p>We also serve great products from Loblolly Creamery, Hillcrest Artisan Meats, Kent Walker Cheeses, & Natchez Restaurant.</p>  
+			</div><!--close grid-60"-->
+		</div><!--close grid container-->				
+    </section>
+    
+	
+	<div class="rule">
+	</div><!--close class="rule"-->
+    
+    
+	<section class="image-gallery">
+		<div class="grid-container">
+			<div class="grid-50">
+				<a href="http://www.loblollycreamery.com/" target="blank"><%= image_tag("loblolly.gif") %></a>		
+			</div><!--close grid-50"-->	
+			
+			<div class="grid-50">
+				<a href="http://natchezrestaurant.com/" target="blank"><%= image_tag("natchez.jpg") %></a>
+			</div><!--close grid-50"-->
+			
+			<div class="grid-50">
+				<a href="http://www.kentwalkercheese.com/" target="blank"><%= image_tag("walker.gif") %></a>		
+			</div><!--close grid-50"-->	
+			
+			<div class="grid-50">
+				<a href="https://www.facebook.com/HillcrestArtisanMeats" target="blank"><%= image_tag("hillcrest.gif") %></a>
+			</div><!--close grid-50"-->
+		</div><!--close class="grid-container"-->
+	</section>
+	
+	
+	<div class="rule">
+	</div><!--close class="rule"-->
+	
+	
+    <section class="callout">
+		<div class="grid-container">
+			<div class="grid-60 prefix-20 suffix-20">     		
+				<p>Regularly scheduled food trucks provide delicious compliments to our brews.</p>
+			</div><!--close grid-60"-->
+		</div><!--close grid container-->				
+    </section>
+	
+	
+	<div class="rule">
+	</div><!--close class="rule"-->
+	
+	
+	<section class="main-text">
+		<div class="grid-container">
+			<div class="grid-30">
+				<h2>Thursdays</h2>
+			</div>    		
+			<div class="grid-50 prefix-10 suffix-10">
+				<a href="https://www.facebook.com/BlackhoundBarBQ" target="blank"><h4>BlackHound BBQ</h4></a>
+				<p></p>
+			</div>
+			
+			<div class="grid-30">
+				<h2>Fridays</h2>
+			</div>    		
+			<div class="grid-50 prefix-10 suffix-10">
+				<a href="http://www.thesoutherngourmasian.com/" target="blank"><h4>Southern Gourmasian</h4></a>
+				<p></p>
+			</div>
+			
+			<div class="grid-30">
+				<h2>Saturdays</h2>
+			</div>    		
+			<div class="grid-50 prefix-10 suffix-10">
+				<a href=""><h4>Luncheria Mexicana Alicia</h4></a>
+				<p></p>
+			</div>
+			
+			<div class="grid-30">
+				<h2>Sundays</h2>
+			</div>    		
+			<div class="grid-50 prefix-10 suffix-10">
+				<a href="https://www.facebook.com/dragginmywagon" target="blank"><h4>The Waffle Wagon</h4></a>
+				<p></p>
+				<p>Schedule subject to change</p>
+			</div>
+		</div><!--close div class="grid-container"-->  	
+    </section><!--close id="history"-->
+    
+	
+    <footer>
+    	<div class="grid-container">
+    		<div class="grid-100">
+    			<div class="grid-33 mobile-grid-33 media">
+					<a href="https://www.facebook.com/StonesThrowBrewing?fref=ts" target="blank"><%= image_tag("icon-facebook.gif") %></a>
+    			</div><!--close grid 33-->
+    	
+    			<div class="grid-33 mobile-grid-33 media">
+      				<a href="https://twitter.com/StonesThrowBrew" target="blank"><%= image_tag("icon-twitter.gif") %></a>
+    			</div><!--close grid 33-->
+    	
+    			<div class="grid-33 mobile-grid-33 media">
+      				<a href="https://www.kickstarter.com/projects/297304074/stones-throw-brewing-tasting-room/posts?page=3" target="blank"><%= image_tag("icon-kick.gif") %></a>
+    			</div><!--close grid 33-->
+    			
+    			<p>Stone’s Throw Brewing All Rights Reserved &copy; 2014</p>
+				<p>Updated March 2014</p>
+    		</div><!-- closediv class="grid-100 mobile-grid-100"-->
+  		</div><!--close div class="grid-container"-->
+    </footer>
+  </body>
+</html>

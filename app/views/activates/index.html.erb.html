@@ -1,0 +1,29 @@
+<h1>Listing activates</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Start</th>
+      <th>Stop</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @activates.each do |activate| %>
+      <tr>
+        <td><%= activate.start %></td>
+        <td><%= activate.stop %></td>
+        <td><%= link_to 'Show', activate %></td>
+        <td><%= link_to 'Edit', edit_activate_path(activate) %></td>
+        <td><%= link_to 'Destroy', activate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Activate', new_activate_path %>

@@ -1,0 +1,396 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* YOUR CODE GOES BELOW */
+
+body {
+	background-color: #f9f6ef;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: large;
+	line-height: 1.7em;
+	color: #534b4a;
+}
+
+/*landing page*/
+#splash {
+	background-image: url('/assets/littlerock.jpg');
+	background-attachment:fixed;
+	background-position: center;
+	background-color: none;
+	color: white;
+}
+#splash h1 {
+	padding-top: 200px;
+	padding-bottom: 125px;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 550%;
+	line-height: 1em;
+	color: white;
+}
+#splash p {
+	padding-bottom: 125px;
+	font-size: 350%;
+	line-height: 1.4em;
+}
+#splash img {
+	padding-bottom: 125px;
+	width: 100%;
+}
+
+/*navigation bar*/
+nav {
+	background-color: #5e5655;
+}
+.nav-logo {
+	padding-top: 20px;
+}
+nav ul {
+	width: 100%;
+	list-style: none;
+}
+nav li {
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;	
+}
+nav a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+nav a:visited {
+	color: white;
+}
+nav a:hover {
+	color: white;
+	background-color: #fc7f4c;
+}
+.selected {
+	background-color: #3497ac;
+}
+.social-media {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/*dark rule for section break*/
+.rule {
+	height: 10px;
+	background-color: #5e5655;
+}
+
+/*section of large text*/
+.callout p{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 175%;
+	line-height: 1.8em;	
+}
+
+/*large icon section on home page*/
+#icons {
+	text-align: center;
+}
+#icons img {
+	width: 100%;
+}
+
+/*section of free content on home page*/
+.article {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 125px;
+	padding-bottom: 125px;
+}
+.article img {
+	display: block;
+	padding-bottom: 75px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.article h1 {
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 200%;
+	font-weight: bold;
+	padding-bottom: 35px;
+	text-align: center;
+}
+.read-button {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 45px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #3497ac;	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 125%;
+	font-weight: bold;
+}
+.read-button a:link {
+	color: white;
+	text-decoration: none;
+}
+.read-button a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+/*footer*/
+footer {
+	background-color: #575251;
+	color: white;
+}
+.media {
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+.media img {
+	width: 100%;
+}
+
+/*second page header*/
+.header {
+	background-image:url('/assets/kettles.jpg');
+	font-size: 50px;
+	line-height: 1.4em;
+	padding-top: 75px;
+	padding-bottom: 75px;
+	color: white;
+}
+
+/* about page*/
+.history {
+	padding-top: 125px;
+	padding-bottom: 125px;
+}
+.history h2 {
+	text-align: right;
+	font-size: 175%;
+	font-family: 'Averia Serif Libre', cursive;
+	color: #3497ac;
+}
+.history p {
+	padding-bottom: 25px;
+}
+.featured {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+.featured article {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+.featured h3 {
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 140%;
+}
+.align-right {
+	text-align: right;
+}
+.feature-image {
+	text-align: center;
+}
+#supporters {
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+#supporters p{
+	padding-top: 50px;
+	font-size: 75%;
+}
+
+/* food page*/
+.image-gallery {
+	padding-top: 125px;
+	padding-bottom: 125px;
+	text-align: center;
+}
+.image-gallery img {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 100%;
+	max-width: 424px;
+}
+.main-text {
+	padding-top: 125px;
+	padding-bottom: 125px;
+}
+.main-text h2 {
+	text-align: right;
+	margin-top: 30px;
+	font-size: 175%;
+	font-family: 'Averia Serif Libre', cursive;
+	color: #3497ac;
+}
+.main-text h4 {
+	margin-top: 30px;
+	font-size: 125%;
+	font-weight: bold;
+}
+.main-text p {
+	padding-bottom: 25px;
+}
+.main-text a:link {
+	margin-top: 30px;
+	font-size: 125%;
+	font-weight: bold;
+	text-decoration: none;
+	color: #53464a;
+}
+.main-text a:visited {
+	color: #53464a;
+}
+.main-text a:hover {
+	color: #fc7f4c;
+}
+
+/*events page*/
+.more-info {
+	padding-top: 125px;
+	padding-bottom: 125px;
+}
+.more-info img {
+	width: 100%;
+}
+.more-info p {
+	padding-bottom: 25px;
+	font-size: 110%;
+	line-height: 1.8em;
+}
+.info-button {
+	margin-top: 45px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #3497ac;	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 125%;
+	font-weight: bold;
+}
+.info-button a:link {
+	color: white;
+	text-decoration: none;
+}
+.info-button a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+/*contact page*/
+#customer-contact {
+	padding-top: 125px;
+	padding-bottom: 125px;
+}
+#customer-contact h2 {
+	margin-top: 50px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	font-size: 120%;
+}
+#contact-info h1 {
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 175%;
+	color: #3497ac;
+}
+#second-p {
+	margin-top: 20px;
+}
+#contact-info img {
+	display: block;
+	margin-top: 50px;
+	width: 100%;
+}
+#email-form p{
+	padding-bottom: 75px;
+	border-bottom-style: dashed;
+	border-bottom-width: 5px;
+	border-bottom-color: #3497ac;
+	font-family: 'Averia Serif Libre', cursive;
+	font-size: 175%;
+	line-height: 1.8em;	
+	
+}
+#email-form input {
+	display: block;
+	padding: 10px;
+	font-size: 125%;
+}
+#email-form textarea {
+	display: block;
+	padding: 10px;
+	font-size: 110%;
+}
+#submit-button {
+	margin-top: 60px;
+	border-radius: 10px;
+	background-color: #3497ac;
+	color: white;
+}
+.featured-beers img {
+	text-align: center;
+	padding-top: 75px;
+}
+.featured-beers h3 {
+	font-weight: bold;
+	font-size: 150%;
+	padding-top: 30px;
+}
+.featured-beers {
+	padding-bottom: 75px;
+}

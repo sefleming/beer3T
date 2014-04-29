@@ -1,0 +1,107 @@
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+
+
+
+<nav>
+  	<div class="grid-container">
+    	<div class="grid-20 nav-logo">
+			<%= image_tag("logo-small.png") %>
+		</div><!--close id="nav-logo"-->
+    	
+		<div class="grid-80">
+    			<ul>
+    				<li><%= link_to "Home", pages_home_path %></li>
+    				<li><%= link_to "About", pages_about_path %></li>
+    				<li><%= link_to "Beers", menu_index_path %></li>
+    				<li><%= link_to "Food", pages_food_path %></li>
+    				<li><%= link_to "Events", pages_events_path %></li>
+    				<li><%= link_to "Distribution", pages_distribution_path %></li>
+    				<li><%= link_to "Contact", pages_contact_path %></li>
+					<li><a class="social-media" href="https://www.facebook.com/StonesThrowBrewing?fref=ts" target="blank"><%= image_tag("icon-facebook-small.gif") %></a></li>
+					<li><a class="social-media" href="https://twitter.com/StonesThrowBrew" target="blank"><%= image_tag("icon-twitter-small.gif") %></a></li>
+					<li><a class="social-media" href="https://www.kickstarter.com/projects/297304074/stones-throw-brewing-tasting-room/posts?page=3" target="blank"><%= image_tag("icon-kick-small.gif") %></a></li>
+    			</ul>
+    	</div>
+  	</div><!--close div class="grid-container"-->  		
+  </nav>
+  
+  
+  <div class="header">
+	<div class="grid-container">
+    	<div class="grid-100">
+    		<p>You made it through the week, so reward yourself with one of our delicious brews.</p>
+    	</div>    	
+  	</div><!--close div class="grid-container"-->  	
+  </div><!--close class="header"-->
+	
+	
+	<div class="rule">
+	</div><!--close class="rule"-->
+		
+	
+    <section class="callout">
+		<div class="grid-container">
+			<div class="grid-60 prefix-20 suffix-20">     		
+				<p>We feature eight taps including exclusive Stone’s Throw Brewing products and guest beers from local and regional breweries.</p>  
+			</div><!--close grid-60"-->
+		</div><!--close grid container-->				
+    </section>
+    
+	
+	<div class="rule">
+	</div><!--close class="rule"-->
+    
+    
+	<section class="featured-beers">
+		<div class="grid-container">
+						
+				
+
+
+
+								<% @products.each do |product| %>
+									<div class="grid-40 prefix-5 suffix-5">
+										
+											<%= image_tag(product.image_url) %>
+											
+										
+											
+											<h3><%= product.name %></h3>
+											<%= sanitize(product.description) %>
+											
+										
+									</div>
+									
+									
+					
+			
+		</div><!--close class="grid-container"-->
+	</section>
+	    
+    
+    <div class="rule">
+	</div><!--close class="rule"-->
+<footer>
+    	<div class="grid-container">
+    		<div class="grid-100 mobile-grid-100">
+    			<div class="grid-33 mobile-grid-33 media">
+					<a href="https://www.facebook.com/StonesThrowBrewing?fref=ts" target="blank"><%= image_tag("icon-facebook.gif") %></a>
+    			</div><!--close grid 33-->
+    	
+    			<div class="grid-33 mobile-grid-33 media">
+      				<a href="https://twitter.com/StonesThrowBrew" target="blank"><%= image_tag("icon-twitter.gif") %></a>
+    			</div><!--close grid 33-->
+    	
+    			<div class="grid-33 mobile-grid-33 media">
+      				<a href="https://www.kickstarter.com/projects/297304074/stones-throw-brewing-tasting-room/posts?page=3" target="blank"><%= image_tag("icon-kick.gif") %></a>
+    			</div><!--close grid 33-->
+    			
+    			<p>Stone’s Throw Brewing All Rights Reserved &copy; 2014</p>
+				<p>Updated March 2014</p>
+    		</div><!-- closediv class="grid-100 mobile-grid-100"-->
+  		</div><!--close div class="grid-container"-->
+    </footer>
+<% end %>

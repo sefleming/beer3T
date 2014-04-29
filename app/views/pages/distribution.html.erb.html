@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <title>Find Stone's Throw Beers</title>
+	  <%= javascript_include_tag :defaults %>
+	  <%= yield :head %>
+  </head>
+  <body>
+  <nav>
+  	<div class="grid-container">
+    	<div class="grid-20 nav-logo">
+			<%= image_tag("logo-small.png") %>
+		</div><!--close id="nav-logo"-->
+    	
+		<div class="grid-80">
+    			<ul>
+    				<li><%= link_to "Home", pages_home_path %></li>
+    				<li><%= link_to "About", pages_about_path %></li>
+    				<li><%= link_to "Beers", controller: "menu" %></li>
+    				<li><%= link_to "Food", pages_food_path %></li>
+    				<li><%= link_to "Events", pages_events_path %></li>
+    				<li><%= link_to "Distribution", pages_distribution_path %></li>
+    				<li><%= link_to "Contact", pages_contact_path %></li>
+					<li><a class="social-media" href="https://www.facebook.com/StonesThrowBrewing?fref=ts" target="blank"><%= image_tag("icon-facebook-small.gif") %></a></li>
+					<li><a class="social-media" href="https://twitter.com/StonesThrowBrew" target="blank"><%= image_tag("icon-twitter-small.gif") %></a></li>
+					<li><a class="social-media" href="https://www.kickstarter.com/projects/297304074/stones-throw-brewing-tasting-room/posts?page=3" target="blank"><%= image_tag("icon-kick-small.gif") %></a></li>
+    			</ul>
+    	</div>
+  	</div><!--close div class="grid-container"-->  		
+  </nav>
+  
+  
+  <div class="header">
+	<div class="grid-container">
+    	<div class="grid-100">
+    		<p>We self-distribute and serve our beers at many restaurants and bars in the central Arkansas area.</p>
+    	</div>    	
+  	</div><!--close div class="grid-container"-->  	
+  </div><!--close class="header"-->
+	
+	
+	<div class="rule">
+	</div><!--close class="rule"-->
+		
+	
+    <section class="callout">
+		<div class="grid-container">
+			<div class="grid-60 prefix-20 suffix-20">    		
+				<p>Stone's Throw Brewing is currently on tap at these local spots.  New accounts are coming soon!  </p>  
+			</div><!--close grid-60"-->
+		</div><!--close grid container-->				
+    </section>
+    
+	
+	<div class="rule">
+	</div><!--close class="rule"-->
+    
+    
+	<section class="image-gallery">
+		<div class="grid-container">
+			<div class="grid-50">
+				<a href="http://www.beerknurd.com/stores/littlerock/" target="blank"><%= image_tag("saucer.jpg") %></a>		
+			</div><!--close grid-50"-->	
+			
+			<div class="grid-50">
+				<a href="http://www.thejointargenta.com/" target="blank"><%= image_tag("joint.gif") %></a>
+			</div><!--close grid-50"-->
+			
+			<div class="grid-50">
+				<a href="http://www.thebutchershop.com/littlerock/index_new.htm" target="blank"><%= image_tag("steakhouse.gif") %></a>		
+			</div><!--close grid-50"-->	
+			
+			<div class="grid-50">
+				<a href="http://bigorangeburger.com/" target="blank"><%= image_tag("orange.png") %></a>
+			</div><!--close grid-50"-->
+			
+			<div class="grid-50">
+				<a href="http://www.professorbowlwest.com/" target="blank"><%= image_tag("professor.jpg") %></a>
+			</div><!--close grid-50"-->
+		</div><!--close class="grid-container"-->
+	</section>
+	
+	
+	<div class="rule">
+	</div><!--close class="rule"-->
+	
+	
+    <section class="callout">
+		<div class="grid-container">
+			<div class="grid-60 prefix-20 suffix-20">      		
+				<p>Interested in Serving Stone’s Throw Brews at your bar or restaurant?</p>
+			</div><!--close grid-60"-->
+		</div><!--close grid container-->				
+    </section>
+	
+	
+	<div class="rule">
+	</div><!--close class="rule"-->
+	
+	
+	<section class="more-info">
+		<div class="grid-container">
+			<div class="grid-50">
+				<%= image_tag("chalk.jpg") %>
+			</div>
+				
+			<div class="grid-35 prefix-10 suffix-5">
+				<p>Local beer is always a great touch.  If you might like to serve Stone’s Throw brews at your resturaunt or bar, contact us.</p>
+				<p>We have tasting appointments available throughout the week, or we can bring samples of our tap to you. The distribution process is simple and quick, so register with us, today.  Free distribution is limited to Central Arkansas.</p>
+				<div class=" gird-100 info-button">
+      				<%= link_to "Contact Us > > >", pages_contact_path %>
+      			</div><!--close- class="read-button"-->
+			</div>  
+		</div>
+	</section>		
+    
+	
+    <footer>
+    	<div class="grid-container">
+    		<div class="grid-100">
+    			<div class="grid-33 media">
+					<a href="https://www.facebook.com/StonesThrowBrewing?fref=ts" target="blank"><%= image_tag("icon-facebook.gif") %></a>
+    			</div><!--close grid 33-->
+    	
+    			<div class="grid-33 media">
+      				<a href="https://twitter.com/StonesThrowBrew" target="blank"><%= image_tag("icon-twitter.gif") %></a>
+    			</div><!--close grid 33-->
+    	
+    			<div class="grid-33 media">
+      				<a href="https://www.kickstarter.com/projects/297304074/stones-throw-brewing-tasting-room/posts?page=3" target="blank"><%= image_tag("icon-kick.gif") %></a>
+    			</div><!--close grid 33-->
+    			
+    			<p>Stone’s Throw Brewing All Rights Reserved &copy; 2014</p>
+				<p>Updated March 2014</p>
+    		</div><!-- closediv class="grid-100 mobile-grid-100"-->
+  		</div><!--close div class="grid-container"-->
+    </footer>
+  </body>
+</html>
